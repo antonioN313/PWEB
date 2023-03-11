@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="author" content="Antonio Carlos Filho" />
+    <meta name="description" content="Atividade de HTML" />
+    <meta name="keywords" content="sites, web, tags, html" />
+    <title>Programação WEB: Design Responsivo - Tecnicas</title>
+    <link rel="stylesheet" type="text/css" href="atividade3/css/style.css" />
+</head>
+<style>
+nav {
+  background-color: #333;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  font-size: 2vw;
+  font-weight: bold;
+  text-transform: uppercase;
+  border: none;
+}
+
+nav a {
+  color: #fff;
+  padding: 0 20px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+nav a:hover {
+  background-color: #fff;
+  color: #333;
+}
+
+#inicio {
+  background-color: #333;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  font-size: 2vw;
+  font-weight: bold;
+  text-transform: uppercase;
+  border: none;
+}
+
+.center {
+  width: 60%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+body {
+  background-color: #ffffff;
+  font-size: 2vw;
+}
+
+.left {
+  float: left;
+  width: 20%;
+  height: 100%;
+  background-color: #ffffff;
+}
+
+.right {
+  float: right;
+  width: 20%;
+  height: 100%;
+  background-color: #ffffff;
+}
+
+.nav-inicio a:hover {
+  background-color: #fff;
+  color: #333;
+}
+
+footer {
+  background-color: #676767;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  font-size: 1vw;
+  font-weight: bold;
+  text-transform: uppercase;
+  border: none;
+}
+
+@media screen and (max-width: 768px) {
+  nav {
+    height: 70px;
+    font-size: 3vw;
+  }
+  nav a {
+    padding: 0 10px;
+    font-size: 1.5vw;
+  }
+  #inicio {
+    height: 70px;
+    font-size: 3vw;
+  }
+  .center {
+    width: 90%;
+    margin: 0 auto;
+  }
+  body {
+    font-size: 3vw;
+  }
+  .left, .right {
+    width: 10%;
+    height: 70px;
+    display: none;
+  }
+}
+
+</style>
+<body>
+
+	<h1 id="inicio">Design Responsivo - Tecnicas</h1>
+	<nav>
+		<a href="#Introducao">Introdução</a>
+		<a href="#Desenvolvimento">Desenvolvimento</a>
+		<a href="#Conclusao">Conclusão</a>
+		<a href="#Referencias">Referências</a>
+	</nav>
+	<div class="center">
+	<div class="left"></div>
+	<div class="right"></div>
+	<section>
+	<h2 id="Introducao">Introdução</h2>
+	<br>
+	<p>Nesta atividade terá como tema abordado será sobre Design responsivo e suas tecnicas
+		comumente abordadas no ramo de web design.
+		O design responsivo é um conceito de design e do desenvolvimento Front-End que 
+		permite que o layout e o conteudo se adaptem a diferentes dispositivos e tamanhos de tela, 
+		tornando-se uma abordagem padrão para o desenvolvimento de sites e aplicativos móveis, devido 
+		a ampla variação de telas disponiveis tanto no ambiente mobile quanto desktop.
+	</p>
+	</section>
+	<br>
+	<section>
+	<h2 id="Desenvolvimento">Desenvolvimento</h2>
+	<br>
+	<p>Posto então o conceito de Design responsivo e o motivo de sua padronização na área, pode 
+		ser feita a discusão das diversas tecnicas para a abordagem e o porquê de usa-las.
+	</p>
+	</section>
+	<section>
+	<h3>Itens e Subitens</h3>
+	<ul>
+		<li>Imagens Flexíveis</li>
+			<p>Imagens são uma parte importante do design de qualquer site na atual epoca da internet, 
+				mas podem ser um desafio em design responsivo. É comum usar em HTML os atributos 
+				“scrset” e “sizes” dentro da tag “img” para controlar o tamanho da imagem, ou ainda, 
+				usando o CSS para exercer a mesma função tendo o atributo “width” como 100% e o 
+				“height” como auto.</p>
+		<li>Media Queries</li>
+		<p>Media query é uma tecnica vinda do CSS3, onde se cria um bloco “@media” caso certas 
+			condições presentes no codigo estejam presentes, permitindo que o estilo seja modificado 
+			para as caracteristicas exigidas, definindo regras de estilo para diversos tamanhos de tela, 
+			tendo então um conteudo e layout adaptado de forma bem eficaz.</p>
+		<li>Grids Flexiveis</li>
+		<p>Inicialmente, um grid é uma malha que divide a em partes, possibilitando a distribuição 
+			uniforme do conteudo, dando equilibrio visual e estrutural. Para que um grid seja usado 
+			num design responsivo, ele precisa ser feito usando unidades relativas, porcentagem ou 
+			ems são escolhas melhores comparadas a valores absolutos como pixels.</p>
+		<li>Tipografia Flexivel</li>
+		<p>Assim como as imagens flexiveis, a composição e impressão de um texto, a tipografia, 
+			também precisa se adaptar a diferentes tamanhos de tela. Com a mesma solução dos grids
+			e das imagens, valores em unidades relativas são uma boa opção para que haja a 
+			flexibilidade na letra.</p>
+	</ul>
+	</section>
+	<section>
+	<h2 id="Conclusao">Conclusão</h2>
+	<p>A responsividade é de extrema importância para quem pretende ou trabalha no 
+		desenvolvimento de páginas para a internet, é valioso conhecer e aplicar as melhores práticas
+		das tecnicas apresentadas,além de estar atualizado com as novas tendências e avanços na área.</p>
+	</section>
+	<section>
+	<h2 id="Referencias">Referências</h2>
+	<ul>
+		<li><a href="https://web.dev/responsive-web-design-basics/"> LEPAGE, Pete; ANDREW, Rachel; Fundamentos de web Design responsivo</a></li>
+		<li><a href="https://www.w3schools.com/css/css_rwd_mediaqueries.asp">W3 Schools</a></li>
+		<li><a href="https://www.smashingmagazine.com/2011/07/responsive-web-design-techniques-tools-and-design-strategies/">Smashing Magazine</a></li>
+		<li><a href="https://css-tricks.com/almanac/properties/f/font-size/">CSS-Tricks</a></li>
+		<li><a href="https://www.w3schools.com/css/css_rwd_images.asp">W3Schools; Responsive Web Design Images</a></li>
+		<li><a href="https://brasil.uxdesign.cc/um-guia-completo-sobre-grids-para-design-responsivo-6b192fea0124">PACHECO,ANDREA; Um guia completo sobre grids para design responsivo;
+			Brasil UX Design</a></li>
+	</ul>
+	</section>
+</div>
+<footer>
+	<section>
+	<p><a href="https://github.com/antonioN313" target="_blank" rel="noopener noreferrer"> Antonio Carlos -Github</a></p>
+    <p>Aula PWEB - 2023</p>
+	</section>
+</footer>
+</body>
+</html>
