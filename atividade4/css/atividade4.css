@@ -1,0 +1,105 @@
+body {
+    background: #6872A9;
+    background-repeat: no-repeat;
+    font-family: "Lucida Grande", "Lucida Sans Unicode", Verdana,
+  sans-serif;
+    line-height: 1.5;
+  /*background-size: cover;
+      background-attachment: scroll;*/
+  }
+.topnav {
+    overflow: hidden;
+    background: #6872A9;
+    
+}
+.topnav h1{
+  font-family: "Lucida Grande", "Lucida Sans Unicode", Verdana,
+  sans-serif;
+  color: #ffffff;
+  float: right;
+  text-decoration: none;
+}
+.topnav img {
+  float: left;
+
+}
+  
+.container {
+  margin: 0 auto;
+  width: 960px;
+  }
+
+.clear { /* para a imagem nao "ficar fora" quando usa o float */
+    clear: both;
+}
+
+footer {
+    font-size: 12px;
+    text-align: center;
+    color: #ffffff;
+}
+
+section { /* para a barra lateral lista e titulo */
+    float: left;
+    width: 660px;
+}
+
+aside {
+    background-color: #ffffff;
+    border: 1px solid #C9BC8F;
+    padding: 10px;
+    float: right;
+    width: 260px;
+}
+    
+aside h3 {
+    font-size: 14px;
+    margin-top: 0;
+}
+    
+aside ul {
+    font-size: 12px;
+}
+
+
+.flag {
+    position: relative;
+    width: 22px;
+    height: 12px;
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+  }
+  .brazil {
+    background-color: #009c37;
+    display: grid;
+    place-items: center;
+  }
+  
+  .brazil__diamond {
+    background-color: #fde000;
+    width: 80%;
+    height: 70%;
+    clip-path: polygon(51% 0%, 100% 50%, 51% 100%, 0% 50%);
+    /* transform: skew(-10deg, -10deg) rotate(45deg); */
+  }
+  
+  .brazil__logo {
+    position: absolute;
+    inset: 0;
+    width: 7px;
+    margin: auto;
+  }
+
+article {
+    background-color: #FFF;
+    border: 1px solid #CCC;
+    border-color: #CCC #999 #999 #CCC;
+    margin-bottom: 20px;
+    padding: 10px; /* espaçamento entre a borda e o título */
+}
+    
+    
+article h2 {
+    border-bottom: 1px dashed #7E9F19;
+    margin: 0;
+}
