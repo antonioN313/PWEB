@@ -1,0 +1,114 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  header {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 20px;
+  }
+  header img{
+    max-width: 100%;
+    height: auto;
+    overflow: hidden;
+  }
+  header h1 a{
+    color: inherit;
+    text-decoration: none;
+}
+  
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  nav li {
+    margin: 0 10px;
+  }
+  
+  nav a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  main {
+    display: flex;
+    padding-left: 5em;
+    padding-right: 5em;
+    padding-bottom: auto;
+  }
+  
+  .content {
+    padding: 20px;
+  }
+
+  .flex-container {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .columns {
+    display: flex;
+  }
+  
+  .column-a,
+  .column-b,
+  .column-c {
+    width: 33.33%;
+    display: flex;
+    flex-direction: column;
+}
+  
+.column-a article,
+.column-b article,
+.column-c article {
+  margin-bottom: 20px;
+}
+
+article img {
+    width: 20em;
+    height: auto;
+  }
+
+@media (max-width: 767px) {
+    .column-a,
+    .column-b,
+    .column-c {
+      width: 100%;
+    }
+    article img {
+        width: 10em;
+        height: auto;
+      }
+  }
+  
+  .article h3 {
+    margin-top: 0;
+  }
+  
+  
+  .content h2 {
+    margin-top: 0;
+  }
+
+  a{
+    color: currentColor;
+  }
+  
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+
+  footer a{
+    color: inherit;
+  }
