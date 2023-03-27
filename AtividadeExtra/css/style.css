@@ -1,0 +1,60 @@
+.simples{
+    height: 500px;
+    width: 500px;
+    margin: auto;
+    background-color: black;
+}
+@media (min-width: 0px) and (max-width: 420px) {
+    .simples{
+        background-color:#04fff2;
+    }
+    .cor::after{
+        content: "Azul claro";
+    }
+
+}
+
+@media (min-width: 421px) and (max-width: 768px){
+    .simples{
+        background-color:#ff7b00;
+    }
+    .cor::after{
+        content: "Laranja claro";
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px){
+    .simples{
+        background-color:#ff00f2;
+    }
+    .cor::after{
+        content: "Rosa Choque";
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1080px){
+    .simples{
+        background-color:#ff4400;
+    }
+    .cor::after{
+        content: "Laranja";
+    }
+}
+
+@media (min-width: 1081px) and (max-width: 1366px){
+    .simples{
+        background-color:#0004ff;
+    }
+    .cor::after{
+        content: "Azul Marinho";
+    }
+}
+
+@media (min-width: 1365px) and (max-width: 1920px){
+    .simples{
+        background-color:#fbff00;
+    }
+    .cor::after{
+        content: "Amarelo";
+    }
+}
