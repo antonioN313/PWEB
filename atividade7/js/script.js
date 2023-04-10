@@ -1,35 +1,35 @@
 // Selecionando os botões
-const rockBtn = document.getElementById("rock");
-const paperBtn = document.getElementById("paper");
-const scissorsBtn = document.getElementById("scissors");
+const pedraBtn = document.getElementById("pedra");
+const papelBtn = document.getElementById("papel");
+const tessouraBtn = document.getElementById("tessoura");
 
 // Adicionando os eventos de clique nos botões
-rockBtn.addEventListener("click", playGame);
-paperBtn.addEventListener("click", playGame);
-scissorsBtn.addEventListener("click", playGame);
+pedraBtn.addEventListener("click", Jogo);
+papelBtn.addEventListener("click", Jogo);
+tessouraBtn.addEventListener("click", Jogo);
 
 // Função principal do jogo
-function playGame(event) {
+function Jogo(event) {
 	// Selecionando a escolha do usuário
-	const userChoice = event.target.id;
+	const usuario = event.target.id;
 
 	// Selecionando a escolha do computador
-	const computerChoice = getComputerChoice();
+	const computador = getComputador();
 
 	// Determinando o vencedor
-	const result = determineWinner(userChoice, computerChoice);
+	const resultado = Vencedor(usuario, computador);
 
-	// Exibindo o resultado na página
-	displayResult(result, computerChoice);
+	// Exibindo o resultadoado na página
+	resultado(resultado, computador);
 }
 
 // Função para selecionar a escolha do computador
-function getComputerChoice() {
-	const randomNumber = Math.floor(Math.random() * 3);
+function getComputador() {
+	const aleatorio = Math.floor(Math.random() * 3);
 
-	if (randomNumber === 0) {
+	if (aleatorio === 0) {
 		return "Pedra";
-	} else if (randomNumber === 1) {
+	} else if (aleatorio === 1) {
 		return "Papel";
 	} else {
 		return "Tessoura";
@@ -37,27 +37,27 @@ function getComputerChoice() {
 }
 
 // Função para determinar o vencedor
-function determineWinner(userChoice, computerChoice) {
-	if (userChoice === computerChoice) {
+function Vencedor(usuario, computador) {
+	if (usuario === computador) {
 		return "Empate";
-	} else if (userChoice === "Pedra" && computerChoice === "Tessoura") {
+	} else if (usuario === "Pedra" && computador === "Tessoura") {
 		return "Voce ganhou! Pedra quebra tesoura.";
-	} else if (userChoice === "Tessoura" && computerChoice === "Papel") {
+	} else if (usuario === "Tessoura" && computador === "Papel") {
 		return "Voce ganhou! Tesoura corta papel.";
-	} else if (userChoice === "Papel" && computerChoice === "Pedra") {
+	} else if (usuario === "Papel" && computador === "Pedra") {
 		return "Voce ganhou! Papel cobre a pedra.";
 	} else {
 		return "Voce perdeu!";
 	}
 }
 
-// Função para exibir o resultado na página
-function displayResult(result, computerChoice) {
-	const resultDiv = document.getElementById("result");
+// Função para exibir o resultadoado na página
+function resultadoado(resultado, computador) {
+	const resulDiv = document.getElementById("resultado");
 
-	if (result === "Empate") {
-        resultDiv.innerHTML = "Empate! O computador escolheu " + computerChoice + ".";
+	if (resultado === "Empate") {
+        resulDiv.innerHTML = "Empate! O computador escolheu " + computador + ".";
     } else {
-        resultDiv.innerHTML = result + " O computador escolheu " + computerChoice + ".";
+        resulDiv.innerHTML = resultado + " O computador escolheu " + computador + ".";
     }
 }    
