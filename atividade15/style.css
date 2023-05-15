@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.fatec img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    min-width: 25vw;
+    max-width: 50vw;
+    
+}
+section{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    height: 100%;  
+}
