@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 13</title>
+</head>
+<body>
+    <div>
+        <label for="idTexto">Texto:</label>
+        <input type="text" id="idTexto" name="texto">
+      </div>
+      <div>
+        <input type="checkbox" id="idCheckboxMaiusculo" name="checkboxMaiusculo">
+        <label for="idCheckboxMaiusculo">Transformar para maiúsculas</label>
+      </div>
+      <div>
+        <input type="checkbox" id="idCheckboxMinusculo" name="checkboxMinusculo">
+        <label for="idCheckboxMinusculo">Transformar para minúsculas</label>
+      </div>
+      <script>
+        const textoInput = document.getElementById('idTexto');
+        const checkboxMaiusculo = document.getElementById('idCheckboxMaiusculo');
+        const checkboxMinusculo = document.getElementById('idCheckboxMinusculo');
+
+        checkboxMaiusculo.addEventListener('change', () => {
+        if (checkboxMaiusculo.checked) {
+        textoInput.value = textoInput.value.toUpperCase();
+        }
+        });
+
+        checkboxMinusculo.addEventListener('change', () => {
+        if (checkboxMinusculo.checked) {
+            textoInput.value = textoInput.value.toLowerCase();
+        }
+        });
+
+    </script>
+</body>
+</html>
