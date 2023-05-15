@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+body{
+    background-image: linear-gradient(75deg,#3f6d4e,#8bd450);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+h2{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%; 
+}
+section{
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;  
+}
+h2,h4, label, p{
+    color: aliceblue;
+}
+
+.pesquisa{
+    text-align: center;
+    margin-top: 10px;
+}
+
+.botao{
+    text-align: center;
+    margin-top: 20px;
+    height: 30px;
+    width: 80px;
+    background-color: #965fd4;
+    color: aliceblue;
+    
+}
